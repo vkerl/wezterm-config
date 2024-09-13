@@ -30,5 +30,5 @@ a wezterm config
 
 ```sh
 # all platform
-git clone https://github.com/vkerl/wezterm_config.git ~/.config/wezterm
+git clone https://github.com/vkerl/wezterm-config.git ~/.config/wezterm
 ```
