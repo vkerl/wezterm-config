@@ -4,8 +4,8 @@ local hyperlink = require("config.hyperlink")
 -- local util = require("utils.util")
 local gpus = wezterm.gui.enumerate_gpus()
 
-local keybinding = require("keybinding")
-local key_tables = require("key_tables")
+local keybinding = require("config.keybinding")
+local key_tables = require("config.key_tables")
 
 ---------------------------------------------------------------
 --- Config
