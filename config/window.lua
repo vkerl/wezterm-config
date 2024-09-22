@@ -1,7 +1,7 @@
 local M = {}
 
 function M.apply_to_config(config)
-  config.window_background_opacity = 0.88
+  config.window_background_opacity = 0.97
   -- config.window_decorations = "NONE"
   -- 去掉窗口的原生标题栏
   config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
