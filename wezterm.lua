@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 local fonts = require("config.fonts")
 local hyperlink = require("config.hyperlink")
-local window = require("config.window")
+local win = require("config.window")
 -- local util = require("utils.util")
 local gpus = wezterm.gui.enumerate_gpus()
 
@@ -34,7 +34,7 @@ config.front_end = "WebGpu"
 config.animation_fps = 60
 config.max_fps = 60
 
-window.apply_to_config(config)
+win.apply_to_config(config)
 fonts.apply_to_config(config)
 keybinding.apply_to_config(config)
 key_tables.apply_to_config(config)
