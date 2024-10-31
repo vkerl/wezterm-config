@@ -4,7 +4,7 @@ local platform = require("utils.platform")
 local M = {}
 
 local font = "JetBrainsMono Nerd Font"
-local font_size = platform().is_mac and 12 or 13
+local font_size = platform().is_mac and 16 or 13
 
 function M.apply_to_config(config)
   config.font = wezterm.font(font)

@@ -2,7 +2,7 @@ local wezterm = require("wezterm")
 local fonts = require("config.fonts")
 local hyperlink = require("config.hyperlink")
 local win = require("config.window")
--- local util = require("utils.util")
+local utils_platform = require("utils.platform")
 local gpus = wezterm.gui.enumerate_gpus()
 
 local keybinding = require("config.keybinding")
@@ -26,7 +26,11 @@ config.disable_default_key_bindings = true
 -- window
 
 -- 默认启动的shell程序
-config.default_prog = { "nu" }
+if not utils_platform().is_win then
+    config.default_prog = { "/usr/local/bin/nu" }
+else
+    config.default_prog = { "nu" }
+end
 
 -- 配置gpu加速
 config.webgpu_preferred_adapter = gpus[1]
